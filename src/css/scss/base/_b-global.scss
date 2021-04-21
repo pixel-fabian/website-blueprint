@@ -6,8 +6,8 @@
 
 body {
   font-family: sans-serif;
-  color: $color__text;
-  background: $color__bg;
+  color: var(color__text);
+  background: var(color__bg);
 }
 
 img {

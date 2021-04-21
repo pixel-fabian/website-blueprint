@@ -17,8 +17,7 @@ const prefixerOptions = {
 };
 
 const paths = {
-  css:        './src/css',
-  cssmin:     './dist/css',
+  css:        './dist/css',
   sourcemaps: './maps',
   sass:       './src/css/scss/**/*.scss',
   sassFile:   './src/css/scss/style.scss',
@@ -42,5 +41,5 @@ gulp.task('styles', function() {
 		.pipe(cssmin())
 		.pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write(paths.sourcemaps))
-		.pipe(gulp.dest(paths.cssmin))
+		.pipe(gulp.dest(paths.css))
 });
