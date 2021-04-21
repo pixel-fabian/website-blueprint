@@ -12,10 +12,6 @@ const sassOptions = {
   includePaths: normalize.includePaths
 };
 
-const prefixerOptions = {
-  browsers: ['last 2 versions']
-};
-
 const paths = {
   css:        './dist/css',
   sourcemaps: './maps',
@@ -35,7 +31,7 @@ gulp.task('styles', function() {
 			console.log(errorMsg.toString());
 			this.emit('end');
 		})
-		.pipe(prefix(prefixerOptions))
+		.pipe(prefix())
 		.pipe(rename('style.css'))
 		.pipe(gulp.dest(paths.css))
 		.pipe(cssmin())
