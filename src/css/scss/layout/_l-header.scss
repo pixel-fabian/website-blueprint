@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+header {
+    height: 80px;
+    padding: 20px;
+    background: var(--color__primary);
+}
+
+.header__title {
+    margin: 0;
+    color: var(--color__text--contrast);
+}

@@ -6,8 +6,9 @@
 
 body {
   font-family: sans-serif;
-  color: var(color__text);
-  background: var(color__bg);
+  color: var(--color__text);
+  background: var(--color__bg);
+  margin: 0;
 }
 
 img {

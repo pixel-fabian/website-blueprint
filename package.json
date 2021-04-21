@@ -4,7 +4,10 @@
   "description": "Small blueprint to create a simple website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "build": "gulp build",
+    "lint": "eslint ./src --ext .ts && prettier --check --ignore-path .gitignore ./src/",
+    "lint:fix": "eslint ./src/**/*.ts --fix && prettier --ignore-path .gitignore --write ./src/"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,7 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
     "gulp-cssnano": "^2.1.3",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
