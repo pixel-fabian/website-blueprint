@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+//calc pixel to rem. 1rem = 16px.
+@function calcPxToRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}

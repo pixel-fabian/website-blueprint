@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+//Breakpoints
+$breakpoint-small: calcPxToRem(520px);
+$breakpoint-medium: calcPxToRem(760px);
+$breakpoint-large: calcPxToRem(1100px);
+
+//Breakpoints
+@mixin atSmall {
+  @media (min-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: $breakpoint-large) {
+    @content;
+  }
+}

@@ -3,13 +3,47 @@ Blueprint to build a simple website
 
 ## Features
 
-- CSS
-  - SASS
-  - BEM notation
-- JS
-  - ES6 modules
-- gulp
+### HTML
 
+Basic index.html file
+
+### CSS
+
+- Preprocessor: [SASS](https://sass-lang.com/)
+- Naming conventions: [BEM](http://getbem.com/)
+- Code structure: inspired by [SMACSS](http://smacss.com/) 
+
+```
+./css/scss
+  style.scss        // imports of all styles
+
+  /base             // general styles, font-face, helpers
+  /layout           // styles defining the layout of the page
+  /modules          // independent modules, that can be used multiple times 
+```
+
+### JavaScript
+
+- [TypeScript](https://www.typescriptlang.org/)
+- Modular JS (imports & exports)
+
+```
+./js
+  script.ts         // imports all necessary TS files
+
+  /modules          // seperate different functionality in different modules
+```
+
+### Tooling
+
+[gulp](https://gulpjs.com/) as taskrunner. Different tasks are defined within the ```gulptasks``` folder.
+
+Available tasks:
+```
+gulp                // starts default task
+```
+
+---------
 
 ## Installation
 
@@ -22,6 +56,8 @@ Prerequisite: Have node.js and npm installed.
 npm install
 ```
 
+---------
+
 ## Usage
 
 1. Start watcher ```npm run dev```
@@ -30,7 +66,7 @@ npm install
 
 ### Deploy for production
 
-
+---------
 
 ## License
 [MIT License](./LICENSE)
