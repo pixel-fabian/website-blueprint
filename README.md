@@ -19,12 +19,12 @@ Basic index.html file
 
   /base             // general styles, font-face, helpers
   /layout           // styles defining the layout of the page
-  /modules          // independent modules, that can be used multiple times 
+  /modules          // independent modules, that can be re-used
 ```
 
 ### JavaScript
 
-- [TypeScript](https://www.typescriptlang.org/)
+- [TypeScript](https://www.typescriptlang.org/) support
 - Modular JS (imports & exports)
 
 ```
@@ -40,7 +40,12 @@ Basic index.html file
 
 Available tasks:
 ```
-gulp                // starts default task
+gulp                // default task for development (build dist and watch src)
+clean               // clean dist folder
+build               // production ready build in dist
+html                // move .html files to dist
+styles              // compile SASS
+watch               // watch src and handle changed files
 ```
 
 ---------
