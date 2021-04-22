@@ -10,7 +10,7 @@ gulp.task('clean', () => {
 gulp.task(
   'default',
   gulp.series(
-    ['clean', 'html', 'styles', 'watch'],
+    ['clean', 'html', 'styles', 'webpack', 'watch'],
     () => {}
   )
 );

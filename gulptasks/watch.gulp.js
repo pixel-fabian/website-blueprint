@@ -8,5 +8,5 @@ gulp.task('watch', () => {
   gulp.watch('src/css/scss/**/*.scss', gulp.series('styles'));
 
   // watch for changes in .ts files
-  //((gulp.watch(['src/js/**/*.ts', '!src/js/**/*.min.ts'], gulp.series('webpack'));
+  gulp.watch(['src/js/**/*.ts', '!src/js/**/*.min.ts'], gulp.series('webpack'));
 });
