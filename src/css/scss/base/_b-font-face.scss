@@ -7,7 +7,7 @@
  * @param $font-path      path, relative to compiled stylesheed
  * @param $font-file      name of the file
  * @param $font-weight    e.g. 300, regular, 400, 600
- * @param $font-weight    e.g. normal, italic
+ * @param $font-style     e.g. normal, italic
  *
  * Example:
  * @include font-face('Open Sans', '../fonts/', 'OpenSans-regular-webfont', 400, normal)
@@ -16,7 +16,7 @@
   $font-family,
   $font-path,
   $font-file,
-  $font-weight: normal,
+  $font-weight: 300,
   $font-style: normal
 ) {
   @font-face {
@@ -36,35 +36,37 @@
   }
 }
 
-/** Roboto Light **/
+
+
+/** Open Sans light **/
 @include font-face(
-  'Roboto',
-  '../assets/fonts/roboto/',
-  'roboto-v18-latin-300',
+  'Open Sans',
+  '../assets/fonts/open-sans/',
+  'open-sans-v18-latin-300',
   300,
   normal
 );
-/** Roboto Regular **/
+/** Open Sans regular **/
 @include font-face(
-  'Roboto',
-  '../assets/fonts/roboto/',
-  'roboto-v18-latin-regular',
+  'Open Sans',
+  '../assets/fonts/open-sans/',
+  'open-sans-v18-latin-regular',
   400,
   normal
 );
-/** Roboto Semibold **/
+/** Open Sans italic **/
 @include font-face(
-  'Roboto',
-  '../assets/fonts/roboto/',
-  'roboto-v18-latin-500',
-  500,
-  normal
+  'Open Sans',
+  '../assets/fonts/open-sans/',
+  'open-sans-v18-latin-italic',
+  300,
+  italic
 );
-/** RobotoBold **/
+/** Open Sans bold **/
 @include font-face(
-  'Roboto',
-  '../assets/fonts/roboto/',
-  'roboto-v18-latin-700',
+  'Open Sans',
+  '../assets/fonts/open-sans/',
+  'open-sans-v18-latin-700',
   700,
   normal
 );

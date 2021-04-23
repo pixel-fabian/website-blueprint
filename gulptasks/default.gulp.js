@@ -6,22 +6,22 @@ gulp.task('clean', () => {
   return gulp.src('dist/*', { read: false }).pipe(clean());
 });
 
-// default task
+// default task, run for development
 gulp.task(
   'default',
   gulp.series(
-    ['clean', 'html', 'styles', 'webpack', 'watch'],
+    ['clean', 'html', 'styles', 'webpack', 'assets', 'watch'],
     () => {}
   )
 );
 
-// build
-// gulp.task(
-//   'build',
-//   gulp.series(
-//     ['clean', 'html', 'styles', 'webpack-prod', 'images', 'fonts'],
-//     (callback) => {
-//       callback();
-//     }
-//   )
-// );
+// build for production
+gulp.task(
+  'build',
+  gulp.series(
+    ['clean', 'html', 'styles', 'webpack-prod', 'assets'],
+    (callback) => {
+      callback();
+    }
+  )
+);

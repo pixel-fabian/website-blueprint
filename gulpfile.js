@@ -1,4 +1,4 @@
-// require('./gulptasks/assets.gulp');
+require('./gulptasks/assets.gulp');
 require('./gulptasks/html.gulp');
 require('./gulptasks/styles.gulp');
 require('./gulptasks/scripts.gulp');
