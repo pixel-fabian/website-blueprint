@@ -44,8 +44,10 @@ Basic index.html file
 Available tasks:
 ```
 gulp                // default task for development (build dist and watch src)
-clean               // clean dist folder
 build               // production ready build in dist
+
+assets              // copy assets folder
+clean               // clean dist folder
 html                // move .html files to dist
 styles              // compile SASS
 webpack             // compile TypeScript
@@ -95,6 +97,8 @@ npm install
 3. Generated files will be in ```dist```
 
 ### Deploy for production
+
+```npm run build```
 
 ---------
 
