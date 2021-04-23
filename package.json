@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/pixel-fabian/website-blueprint#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-config-recommended": "^4.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean": "^0.4.0",
@@ -28,6 +33,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "node-normalize-scss": "^8.1.2",
+    "prettier": "^2.2.1",
     "ts-loader": "^9.1.0",
     "typescript": "^4.2.4",
     "webpack": "^5.35.0"

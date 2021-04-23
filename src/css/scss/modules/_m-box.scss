@@ -1,18 +1,18 @@
 .box {
-    margin: 0 40px;
+  margin: 0 40px;
 
-    &:first-child {
-        margin-left: 0;
-    }
-    &:last-child {
-        margin-right: 0;
-    }
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .box__title {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .box__text {
-    line-height: 1.5;
+  line-height: 1.5;
 }

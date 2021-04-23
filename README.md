@@ -31,12 +31,15 @@ Basic index.html file
 ./js
   script.ts         // imports all necessary TS files
 
-  /modules          // seperate different functionality in different modules
+  /modules          // re-usable modules as classes
 ```
 
-### Tooling
+### Tools
 
-[gulp](https://gulpjs.com/) as taskrunner. Different tasks are defined within the ```gulptasks``` folder.
+
+#### Taskrunner
+
+[gulp](https://gulpjs.com/), different tasks are defined within the ```gulptasks``` folder.
 
 Available tasks:
 ```
@@ -45,7 +48,29 @@ clean               // clean dist folder
 build               // production ready build in dist
 html                // move .html files to dist
 styles              // compile SASS
+webpack             // compile TypeScript
 watch               // watch src and handle changed files
+```
+
+#### Webpack
+
+Typescript is compiled and bundled with [webpack](https://webpack.js.org/). Config: ```webpack.config.js```
+
+#### Linter & formatter
+
+[eslint](https://eslint.org/) to find and fix problems within JavaScript and [prettier](https://prettier.io/) to format code.
+
+configs:
+```
+.eslintignore
+.eslintrc.json
+.prettierrc
+```
+
+npm scripts:
+```
+lint
+lint:fix
 ```
 
 ---------

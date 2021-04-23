@@ -5,23 +5,23 @@
    Base - general styles, font-face, helpers
    ========================================================================== */
 
-   @import './base/_b-helper.scss';
-   @import './base/_b-variables.scss';
-   @import './base/_b-breakpoints.scss';
-   @import './base/_b-font-face.scss';
-   @import './base/_b-global.scss';
+@import './base/_b-helper.scss';
+@import './base/_b-variables.scss';
+@import './base/_b-breakpoints.scss';
+@import './base/_b-font-face.scss';
+@import './base/_b-global.scss';
 
 /* ==========================================================================
    Layout - styles defining the layout of the page
    ========================================================================== */
 
-   @import './layout/_l-header.scss';
-   @import './layout/_l-main.scss';
+@import './layout/_l-header.scss';
+@import './layout/_l-main.scss';
 
 /* ==========================================================================
    Modules - independent modules, that can be used multiple times
    ========================================================================== */
 
-   @import './modules/_m-box.scss';
-   @import './modules/_m-row.scss';
-   @import './modules/_m-wrapper.scss';
+@import './modules/_m-box.scss';
+@import './modules/_m-row.scss';
+@import './modules/_m-wrapper.scss';
