@@ -1,4 +1,3 @@
-import BounceBall from './modules/bounceBall';
+import ColorChange from './modules/colorChange';
 
-const bounceBall = new BounceBall('.wrapper');
-bounceBall.startMoving();
+new ColorChange('.box__title');
