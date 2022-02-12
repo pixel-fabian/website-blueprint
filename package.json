@@ -33,6 +33,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "node-normalize-scss": "^8.1.2",
+    "node-sass": "^7.0.1",
     "prettier": "^2.5.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.5",

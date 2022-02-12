@@ -1,6 +1,6 @@
 let gulp = require('gulp'),
   prefix = require('gulp-autoprefixer'),
-  sass = require('gulp-sass'),
+  sass = require('gulp-sass')(require('node-sass')),
   sourcemaps = require('gulp-sourcemaps'),
   rename = require('gulp-rename'),
   cssmin = require('gulp-cssnano'),
